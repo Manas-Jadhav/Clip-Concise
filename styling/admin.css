@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
+
+* {
+	margin: 0;
+	padding: 0px;
+}
+
+html,
+body {
+	background-image: url(admin_img.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+	overflow: visible;
+	height: 100vh;
+}
+
+.navbar {
+	backdrop-filter: blur(30px);
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgb(255, 255, 255);
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.navbar-left {
+	display: flex;
+	align-items: center;
+}
+.navbar-right {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.nav-items {
+	font-size: 1rem;
+}
+
+.redirects {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 0.9rem;
+	text-decoration: none;
+	color: white;
+}
+.title {
+	font-size: 1.7rem;
+	font-weight: 600;
+	font-family: "Agency FB", Agency FB;
+	margin: 0 0.8rem;
+}
+a:hover {
+	color: #147fc6;
+}
+.logo-container {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 40px;
+	height: 40px;
+}
+.logo {
+	max-width: 80%;
+	max-height: 80%;
+	width: auto;
+	height: auto;
+}
+
+.container {
+	/* height: 100%; */
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+table,
+tr,
+td,
+th {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+	text-align: center;
+	border: black 2px solid;
+	padding: 10px;
+}
+.tab {
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.6);
+	color: black;
+	border-collapse: collapse;
+}
+.heading {
+	background-color: black;
+	color: white;
+	border: none;
+}
+.links {
+	padding-top: 20px;
+}
+.link {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+#rmbtn {
+	height: 50px;
+	width: 30px;
+	background-color: none;
+	border: none;
+	cursor: pointer;
+	margin: auto;
+}
+svg {
+	fill: red;
+}

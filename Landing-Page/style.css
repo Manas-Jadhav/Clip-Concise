@@ -1,0 +1,754 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1,
+h3,
+h2,
+h5,
+h4,
+p {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.content {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+.white {
+	color: rgba(230, 230, 230, 1);
+}
+
+/* HEADER */
+.logo-container {
+	background-color: aqua;
+	display: flex;
+	justify-content: center; /* Horizontally center the content */
+	align-items: center; /* Vertically center the content */
+	border-radius: 10px;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	height: 70px;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	z-index: 10;
+}
+
+.header-change {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.header-bottom {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.header-bottom .main-nav {
+	flex-direction: column;
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+
+.header-bottom .main-nav h3 {
+	margin-bottom: 10px;
+}
+
+.header-bottom .right-nav {
+	margin: 0 auto !important;
+}
+
+.header-active {
+	background-color: rgb(0, 0, 0);
+	box-shadow: 0px 2px 10px black;
+	transition: background-color 0.3s;
+}
+
+.header .brand {
+	margin-left: 25px;
+	display: flex;
+}
+
+.main-nav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+}
+
+.main-nav .button-container {
+	height: calc(100% - 10px);
+	margin-top: 5px;
+	padding: 0px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 5px solid transparent;
+	border-bottom-color: transparent;
+	transition: border-bottom-color 0.3s;
+}
+
+.main-nav .button-container:hover {
+	cursor: pointer;
+	border-bottom-color: aqua;
+	transition: border-bottom-color 0.3s;
+}
+
+.main-nav .button-container h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	color: aqua;
+}
+
+.header .right-nav {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	margin-right: 25px;
+}
+
+.right-nav .button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 25px;
+	border-radius: 8px;
+}
+
+.login {
+	background-color: rgb(5, 255, 172);
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.login:hover {
+	background-color: rgb(0, 255, 255);
+	cursor: pointer;
+}
+
+.right-nav .button-container h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+.hamburger {
+	margin-left: auto;
+	margin-right: 25px;
+}
+
+.hamburger:hover svg {
+	cursor: pointer;
+}
+
+.hamburger svg {
+	width: 30px;
+	height: 30px;
+	min-width: 30px;
+	padding: 8px;
+	border-radius: 12px;
+	background-color: aqua;
+	color: black;
+}
+/* END HEADER */
+
+/* TOP SECTION */
+.image-container-right {
+	display: flex;
+	align-items: center;
+}
+
+.responsive-image {
+	max-width: 100%;
+	height: auto;
+	margin-left: 160px; /* Adjust the margin as needed */
+}
+
+.logo {
+	width: 50px; /*fit the space */
+	height: auto;
+}
+
+.top {
+	width: 100%;
+	min-height: 250px;
+	display: flex;
+	align-items: center;
+	background-image: url("square.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.top .image-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background: rgb(20, 20, 20);
+	background: linear-gradient(
+		0deg,
+		rgba(20, 20, 20, 1) 0%,
+		rgba(255, 255, 255, 0) 36%
+	);
+}
+
+.top .left-side {
+	width: 40%;
+	height: 80%;
+	padding-left: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.top h1 {
+	margin: 0px;
+	font-family: "Bahnschrift", Bahnschrift;
+	font-weight: 400;
+	font-size: 70px;
+	color: white;
+	text-shadow: 5px 5px 10px black;
+}
+
+.top p {
+	margin: 0px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 50px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	padding: 25px 0px;
+}
+
+.button-section {
+	width: 100%;
+	display: flex;
+	font-family: "Roboto", sans-serif;
+}
+
+.button-section svg {
+	width: 25px;
+	height: 25px;
+	min-width: 25px;
+	padding-left: 10px;
+}
+
+.top .watch,
+.top .queue {
+	padding: 10px 25px;
+	border-radius: 8px;
+}
+
+.watch {
+	color: rgb(0, 0, 0);
+	display: flex;
+	background-color: aquamarine;
+	margin-right: 15px;
+}
+
+.watch:hover {
+	cursor: pointer;
+}
+
+/* END TOP SECTION*/
+
+/* MID SECTION */
+.mid {
+	display: flex;
+	flex-direction: column;
+	background-color: #141414;
+	padding: 40px;
+}
+
+.mid .content-area {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+.content-area .content-title {
+	font-family: "candara", candara;
+	color: white;
+	font-size: 35px;
+	letter-spacing: 3px;
+	padding-left: 40px;
+}
+
+.card-carousel {
+	width: 100%;
+	margin: 25px 0px;
+	display: flex;
+}
+
+.card-carousel:hover svg {
+	color: white;
+	transition: color 0.3s;
+}
+
+.carousel-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.carousel-btn svg {
+	width: 40px;
+	height: 40px;
+	color: transparent;
+	transition: color 0.3s;
+}
+
+.carousel-btn svg:hover {
+	color: lightgrey;
+	cursor: pointer;
+}
+
+.card {
+	background-size: cover;
+	transform: scale(1);
+	transition: transform 0.2s;
+	border-radius: 5px;
+}
+
+.card:hover {
+	transform: scale(1.3);
+	transition: transform 0.5s;
+	z-index: 1;
+}
+
+.cast-card {
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.card:hover .overlay {
+	display: flex;
+}
+
+.card {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ensure the thumbnail fills the space without distortion */
+}
+/* END MID SECTION */
+
+/* FOOTER */
+.bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100px;
+	background-color: #141414;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom .btn-row {
+	width: 50%;
+	margin: 15px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bottom .btn-row h4 {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 17px;
+}
+
+.bottom .btn-row h4:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.bottom .brand {
+	display: flex;
+}
+
+.bottom .brand h1 {
+	font-family: "Agency FB", Agency FB;
+	font-size: 35px;
+}
+
+.bottom .socials {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.socials a svg {
+	width: 25px;
+	height: 25px;
+	max-width: 25px;
+	color: rgb(49, 154, 235);
+	padding-left: 20px;
+}
+
+.btn-row p {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 8px;
+}
+/* END FOOTER */
+
+/* MODAL */
+
+.side-buttons svg:hover {
+	background-color: #141414;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+/* END MODAL */
+
+@media screen and (max-width: 1660px) {
+	.top p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1430px) {
+	.card h4 {
+		font-size: 16px;
+	}
+
+	.card p {
+		font-size: 11px;
+	}
+
+	.overlay {
+		width: calc(100% - 20px);
+		padding: 0px 10px;
+	}
+
+	.overlay .button-container {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.modal-content {
+		max-width: 800px;
+	}
+}
+
+@media screen and (max-width: 1330px) {
+	.top h1 {
+		font-size: 80px;
+	}
+
+	.top p {
+		font-size: 14px;
+	}
+
+	.top h3 {
+		font-size: 12px;
+	}
+
+	.top svg {
+		width: 20px;
+		height: 20px;
+		min-width: 20px;
+	}
+
+	.top .watch,
+	.top .queue {
+		padding: 7px 20px;
+	}
+}
+
+@media screen and (max-width: 1230px) {
+	.main-nav .button-container h2 {
+		font-size: 20px;
+	}
+
+	.right-nav .button-container h2 {
+		font-size: 16px;
+	}
+
+	.carousel-btn svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.card svg {
+		width: 20px;
+		height: 20px;
+		min-width: 20px;
+	}
+
+	.content-area .content-title {
+		padding-left: 30px;
+	}
+}
+
+@media screen and (max-width: 1130px) {
+	.image-container-right {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.top .left-side {
+		padding-left: 6%;
+		width: 45%;
+	}
+
+	.modal-content {
+		max-width: 700px;
+	}
+}
+
+@media screen and (max-width: 1045px) {
+	.top h1 {
+		font-size: 65px;
+	}
+
+	.top p {
+		font-size: 12px;
+	}
+
+	.content-area .content-title {
+		font-size: 28px;
+	}
+
+	.mid {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.header .brand h1 {
+		font-size: 30px;
+	}
+
+	.main-nav .button-container h2 {
+		font-size: 16px;
+	}
+
+	.right-nav .button-container h2 {
+		font-size: 12px;
+	}
+
+	.main-nav {
+		margin-left: 30px;
+	}
+
+	.movie-desc {
+		padding: 0px;
+		height: 100%;
+	}
+
+	.modal-content {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.header {
+		min-height: 70px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 737px) {
+	.carousel-btn {
+		display: none;
+	}
+
+	.card {
+		display: flex !important;
+		overflow-y: visible;
+	}
+
+	.card:hover {
+		position: relative;
+		margin: 0px 30px !important;
+	}
+
+	.card-carousel {
+		overflow-x: scroll;
+		overflow-y: visible;
+		align-items: center;
+	}
+
+	.card svg {
+		width: 10px;
+		height: 10px;
+		min-width: 10px;
+	}
+
+	.content-area .content-title {
+		padding-left: 0px;
+	}
+
+	.bottom .btn-row {
+		width: 95%;
+	}
+
+	.desc-top h3 {
+		font-size: 16px;
+	}
+
+	.desc-top svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.desc-mid p {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.carousel-btn svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.card-carousel {
+		margin: 10px 0px;
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.card h4 {
+		font-size: 13px;
+	}
+
+	.card p {
+		font-size: 8px;
+	}
+
+	.overlay {
+		width: calc(100% - 16px);
+		padding: 0px 8px;
+	}
+
+	.overlay .button-container {
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+
+	.card .queue {
+		margin-left: 8px;
+	}
+
+	.card .queue,
+	.card .watch,
+	.card .star {
+		padding: 4px;
+	}
+
+	.search-area-content h2 {
+		font-size: 25px;
+	}
+	.search-area-content p {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 610px) {
+	.card svg {
+		width: 8px;
+		height: 8px;
+		min-width: 8px;
+	}
+
+	.top h1 {
+		font-size: 50px;
+	}
+
+	.top p {
+		font-size: 10px;
+		padding: 15px 0px;
+	}
+
+	.top .left-side {
+		width: 80%;
+	}
+
+	.mid {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 545px) {
+	.card h4 {
+		font-size: 10px;
+	}
+
+	.card p {
+		font-size: 10px;
+	}
+
+	.search-area-content h2 {
+		text-align: center;
+		font-size: 24px;
+	}
+	.search-area-content p {
+		text-align: center;
+		width: 90%;
+		font-size: 12px;
+	}
+
+	.desc-top h3 {
+		font-size: 14px;
+	}
+
+	.desc-top svg {
+		width: 18px;
+		height: 18px;
+	}
+
+	.desc-mid p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.btn-row {
+		flex-direction: column;
+	}
+
+	.socials svg {
+		padding: 0px 10px;
+	}
+}

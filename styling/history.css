@@ -1,0 +1,65 @@
+@import url("https://fonts.cdnfonts.com/css/agency-fb");
+
+body {
+	display: flex;
+	min-height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+.titles {
+	cursor: pointer;
+	margin: 35px 0;
+}
+.titles:hover {
+	color: aqua;
+}
+
+.sidebar {
+	background: hsl(0, 0%, 20%);
+	color: #fff;
+	max-width: 250px;
+	padding: 20px;
+	overflow: auto;
+	overflow-y: scroll;
+	position: fixed;
+	height: 100vh;
+}
+
+.main-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	padding: 20px;
+	margin-left: 290px;
+}
+
+@media (max-width: 600px) {
+	.sidebar {
+		width: 100%;
+	}
+}
+svg {
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	fill: white;
+	cursor: pointer;
+}
+svg:hover {
+	fill: aqua;
+}
+h6 {
+	font-size: 15px;
+	font-weight: 300;
+}
+.image {
+	width: 400px;
+	height: 220px;
+	background-image: url("logo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#cc {
+	font-family: "Agency FB";
+}

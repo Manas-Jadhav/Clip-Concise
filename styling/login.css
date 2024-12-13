@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "poppins", sans-serif;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	background: url("reg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.wrapper {
+	position: relative;
+	width: 400px;
+	height: 470px;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	backdrop-filter: blur(20px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 20px grey;
+}
+
+h2 {
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.inputbox {
+	position: relative;
+	margin: 30px 0;
+	width: 310px;
+}
+
+.inputbox input::placeholder {
+	color: #fff;
+	padding: 10px;
+}
+
+.inputbox label {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1em;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.inputbox input {
+	width: 85%;
+	height: 30px;
+	background: transparent;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	padding: 0 35px 0px 18px;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border-radius: 40px;
+}
+
+.inputbox ion-icon {
+	position: absolute;
+	right: 8px;
+	color: #fff;
+	font-size: 1.2em;
+	top: 8px;
+	transform: translateX(8px);
+}
+
+button {
+	width: 100%;
+	height: 40px;
+	border-radius: 40px;
+	background: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 600;
+	margin-bottom: 15px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+	width: 100%;
+	color: #fff;
+	cursor: pointer;
+	moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-image: linear-gradient(
+		to right,
+		#25aae1,
+		#40e495,
+		#30dd8a,
+		#2bb673
+	);
+}
+
+button:active {
+	background-color: #002280; /* Change background color on click */
+	color: #fff; /* Change text color on click */
+}
+
+a {
+	text-decoration: none;
+	margin-left: 5px;
+}
+
+.errormsg {
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#redirect {
+	font-weight: lighter;
+}
+
+.logreg-link {
+	color: white;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.logreg-link a {
+	color: blue; /* Change the color of the link text to white */
+}
+
+.register-link {
+	color: blue; /* Change the color of the "Create Account" text to white */
+}
+a:hover {
+	color: rgb(255, 0, 0);
+	text-decoration: underline;
+}
+.welcome-link {
+	color: white;
+	margin: 20px;
+	margin-top: 50px;
+	text-align: center;
+}

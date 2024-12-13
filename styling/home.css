@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
+
+* {
+	margin: 0;
+	padding: 0px;
+}
+
+html,
+body {
+	z-index: -1;
+	background-image: url(background.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+	overflow: visible;
+	height: 100vh;
+}
+
+.navbar {
+	backdrop-filter: blur(30px);
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgb(255, 255, 255);
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.navbar-left {
+	display: flex;
+	align-items: center;
+}
+.navbar-right {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.nav-items {
+	font-size: 1rem;
+}
+
+.redirects {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 0.9rem;
+	text-decoration: none;
+	color: white;
+}
+.title {
+	font-size: 1.7rem;
+	font-weight: 600;
+	font-family: "Agency FB", Agency FB;
+	margin: 0 0.8rem;
+}
+a:hover {
+	color: #147fc6;
+}
+.main {
+	display: flex;
+	padding-bottom: 2rem;
+	padding-top: 5rem;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 12rem;
+}
+.search {
+	text-align: center;
+	order: 2;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center;
+}
+
+.search form {
+	display: flex;
+	flex-direction: column; /* Stack form elements vertically */
+	align-items: center; /* Center form elements horizontally */
+}
+.search-bar {
+	height: 3rem;
+	width: 40vw;
+	border-radius: 0.5rem;
+	border: #1ecd67 solid 0.2rem;
+	font-size: 1.2rem;
+	padding-left: 10px;
+	margin-bottom: 40px;
+}
+.search-button {
+	font-family: "Agency FB", Agency FB;
+	font-size: 1.5rem;
+	font-weight: 700;
+	background-color: rgb(255, 255, 255);
+	color: #270303;
+	height: 2.1rem;
+	width: 9vw;
+	border-radius: 0.5rem;
+	border: none;
+	margin: 0 1rem;
+}
+.search-button:hover {
+	cursor: pointer;
+}
+
+.output {
+	width: 80vw;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.output-summary {
+	/* width: 80vw; */
+	background-color: cadetblue;
+}
+
+.logo-container {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 40px;
+	height: 40px;
+}
+
+.logo {
+	max-width: 80%;
+	max-height: 80%;
+	width: auto;
+	height: auto;
+}
+#summary_container {
+	text-align: left;
+	color: black;
+	max-width: 80%;
+	padding: 50px;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(50px);
+	border-radius: 20px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+	margin-bottom: 250px;
+}
+#summary_para{
+	font-size: 15px;
+    line-height: 1.5;
+    font-family:'Arial',Arial;
+}
+#main_container{
+	width: 100vw;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	margin-left: auto;
+}
+
+.bottom {
+	margin-top: 40px;
+	backdrop-filter: blur(30px);
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgb(255, 255, 255);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height:80px;
+	justify-content: center;
+	align-items: center;
+	position:fixed;
+	bottom:0;
+	z-index: -1;
+}
+
+.bottom .btn-row {
+	width: 50%;
+	margin: 10px 35px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bottom .btn-row h4 {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+}
+
+.bottom .btn-row h4:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.bottom .brand {
+	display: flex;
+}
+
+.bottom .brand h1 {
+	font-family: "Agency FB", Agency FB;
+	font-size: 25px;
+}
+
+.bottom .socials {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.socials a svg {
+	width: 20px;
+	height: 20px;
+	max-width: 20px;
+	color: rgb(49, 154, 235);
+	padding-left: 20px;
+}
+
+.btn-row p {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 7px;
+}
